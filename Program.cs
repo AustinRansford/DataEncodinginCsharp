@@ -11,6 +11,11 @@ namespace DataEncodinginCsharp
             string encrypted;
             encrypted = cipher.Encrypt("rosebud");
             Console.WriteLine($"The encrypted message is: {encrypted}");
+
+            string decrypted;
+            decrypted = cipher.Decrypt(encrypted);
+            Console.WriteLine($"The encrypted message is: {decrypted}");
+
             // char ch;
             // ch = 'A';
             // Console.WriteLine($"ch is stroing the value: {ch}");

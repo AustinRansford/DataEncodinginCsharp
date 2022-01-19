@@ -29,15 +29,16 @@ public class Cipher
         // Console.WriteLine("enter a word to decrypt:");
         // cosole.readline(newstring);
         // message = newstring;
-        foreach(char word in message){
-            newMessage += word - (char)this.shift;
+        foreach(char c in message){
+            newMessage += (char)(c - this.shift);
 
         }
         // TODO: Finish the Decrypt method
-        return null;
+        return newMessage;
     }
 
     /// <summary>
+
     /// Given a message, returns the result of encrypting it with this Cipher
     /// </summary>
     /// <param name="message">The message to encrypt</param>
