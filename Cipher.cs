@@ -2,6 +2,9 @@ public class Cipher
 {
 
     private int shift;
+    
+
+
 
     /// <summary>
     /// Constructs a shift cipher with the specified shift.
@@ -10,6 +13,9 @@ public class Cipher
     public Cipher(int shift)
     {
         this.shift = shift;
+       
+    
+        
     }
 
     /// <summary>
@@ -19,6 +25,14 @@ public class Cipher
     /// <returns>The decrypted message</returns>
     public string Decrypt(string message)
     {
+        string newMessage = string.Empty;
+        // Console.WriteLine("enter a word to decrypt:");
+        // cosole.readline(newstring);
+        // message = newstring;
+        foreach(char word in message){
+            newMessage += word - (char)this.shift;
+
+        }
         // TODO: Finish the Decrypt method
         return null;
     }
@@ -35,7 +49,7 @@ public class Cipher
         {
             //TODO: The following copies the message character by character.
             //      Instead, you should to encrypt each character using the shift
-            newMessage += c;
+            newMessage += (char)(c + this.shift);
         }
         return newMessage;
     }
