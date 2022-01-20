@@ -190,14 +190,14 @@ After decrypting each message, add them below:
 
 ```
 1. You have decrypted this message!
-2. ?
-3. ?
-4. ?
-5. ?
-6. ?
-7. ?
-8. ?
-9. ?
+2. the dycrypted message is Don't forget to drink your ovalteen
+3. the dycrypted message is https://tiny.one/solution
+4. the dycrypted message is Did you hear what happened to the man who did not pay for his exorcism?
+5. the dycrypted message is He was repossessed.
+6. the dycrypted message is How does a penguin build its house?
+7. the dycrypted message is Igloos it together.
+8. the dycrypted message is Did you hear about the magician who was driving home?
+9. the dycrypted message is I heard she turned into a driveway.	
 ```
 
 ## Submitting your Solution

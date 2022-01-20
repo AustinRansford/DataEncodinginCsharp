@@ -6,15 +6,46 @@ namespace DataEncodinginCsharp
     {
         static void Main(string[] args)
         {
-            Cipher cipher;
-            cipher = new Cipher(5);
-            string encrypted;
-            encrypted = cipher.Encrypt("rosebud");
-            Console.WriteLine($"The encrypted message is: {encrypted}");
+            string filepath;
+            filepath = args[0];
+            Console.WriteLine($"Loading '{filepath}'");
 
-            string decrypted;
-            decrypted = cipher.Decrypt(encrypted);
-            Console.WriteLine($"The encrypted message is: {decrypted}");
+            string message;
+            message = System.IO.File.ReadAllText(filepath);
+            Console.WriteLine($"The encrytped message is; {message}");
+
+            int shift;
+            shift = 1;
+            while (shift <= 10)
+            {
+                Cipher cipher;
+                cipher = new Cipher(shift);
+                string decrypted;
+                decrypted = cipher.Decrypt(message);
+                Console.WriteLine($"the dycrypted message is {decrypted}");
+                shift = shift + 1;
+                // return message;
+            }
+
+
+
+
+
+
+            // string message;
+            // message = System.IO.File.ReadAllText("secrets/1.txt");
+            // Console.WriteLine($"The encrypted message is: {message}");
+
+
+            // Cipher cipher;
+            // cipher = new Cipher(3);
+            // string decrypted;
+            // decrypted = cipher.Decrypt($"{message}");
+            // Console.WriteLine($"The decrypted message is: {decrypted}");
+
+            // string decrypted;
+            // decrypted = cipher.Decrypt(encrypted);
+            // Console.WriteLine($"The encrypted message is: {decrypted}");
 
             // char ch;
             // ch = 'A';
